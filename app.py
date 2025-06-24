@@ -1,4 +1,4 @@
-import agent_arxiv.streamlit3 as st
+import streamlit as st
 import requests
 import os
 from dotenv import load_dotenv
