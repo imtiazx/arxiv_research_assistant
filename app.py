@@ -248,7 +248,7 @@ def is_paper_list_response(response_text):
     return len(numbered_lines) >= 2
 
 # === Function to call Langflow ===
-def query_langflow(user_input, openai_api_key):
+def query_langflow(user_input):
     """Query Langflow API"""
     # Debug: Print and display API URL and LANGFLOW_TOKEN
     print(f"[DEBUG] API_URL: {API_URL}")
@@ -375,7 +375,7 @@ if user_input and user_input.strip():
         st.write(user_input)
     with st.chat_message("assistant"):
         with st.spinner("🔍 Searching ArXiv and processing..."):
-            response = query_langflow(user_input, openai_api_key)
+            response = query_langflow(user_input)
         if is_paper_list_response(response):
             papers = parse_paper_data(response)
             if papers:
