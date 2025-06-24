@@ -55,7 +55,7 @@ The system remembers your previous searches, so you can ask questions about the 
 
 4. Run the App
    ```bash
-   streamlit run streamlit.py```
+   streamlit run streamlit.py
 
 ---
 
@@ -70,6 +70,6 @@ The system remembers your previous searches, so you can ask questions about the 
 - Langflow
 - OpenAI GPT-4o-mini
 
-📜 License
+### 📜 License
 This project is open-source and available under the MIT License.
 ---
