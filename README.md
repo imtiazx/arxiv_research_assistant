@@ -71,5 +71,4 @@ The system remembers your previous searches, so you can ask questions about the 
 - OpenAI GPT-4o-mini
 
 ### 📜 License
-**This project is open-source and available under the MIT License.
-**---
+This project is open-source and available under the MIT License.
