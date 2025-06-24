@@ -320,9 +320,6 @@ st.markdown("*Powered by Langflow & GPT-4o-mini*")
 
 # === Sidebar with instructions ===
 with st.sidebar:
-    st.header("🔑 Enter Your OpenAI API Key")
-    openai_api_key = st.text_input("OpenAI API Key", type="password")
-    st.markdown("**You must provide your own OpenAI API key to use this app.**")
     st.header("🔧 How to Use")
     st.markdown("""
     1. **Search for papers**: Ask about specific research topics
