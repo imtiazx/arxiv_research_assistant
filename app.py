@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 import re
 
 # === Load .env variables ===
-LANGFLOW_TOKEN = st.secrets["LANGFLOW_TOKEN"]
+LANGFLOW_TOKEN = st.secrets["general"]["LANGFLOW_TOKEN"]
 
 # === Langflow API Configuration ===
 API_URL = "https://api.langflow.astra.datastax.com/lf/d2b3e98e-4aae-4715-8695-f50c9ae8cf50/api/v1/run/9aa1c11b-f102-42f5-8038-30fb504d4639"
