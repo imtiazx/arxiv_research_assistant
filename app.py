@@ -290,6 +290,9 @@ def query_langflow(user_input):
         clean_response = extract_structured_content(response_data)
         print(f"Extracted Clean Response: {clean_response}")
         
+        st.markdown("#### Debug: Raw API Response")
+        st.write(response.text)
+        
         return clean_response
         
     except requests.exceptions.HTTPError as e:
