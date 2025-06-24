@@ -12,6 +12,12 @@ LANGFLOW_TOKEN = st.secrets["general"]["LANGFLOW_TOKEN"]
 # === Langflow API Configuration ===
 API_URL = "https://api.langflow.astra.datastax.com/lf/d2b3e98e-4aae-4715-8695-f50c9ae8cf50/api/v1/run/9aa1c11b-f102-42f5-8038-30fb504d4639"
 
+# Debug: Show API URL and LANGFLOW_TOKEN (partially masked)
+def mask_token(token):
+    if not token or len(token) < 8:
+        return "***"
+    return token[:4] + "..." + token[-4:]
+
 def extract_structured_content(response_data):
     """Extract clean, structured content from API response"""
     try:
@@ -244,6 +250,11 @@ def is_paper_list_response(response_text):
 # === Function to call Langflow ===
 def query_langflow(user_input, openai_api_key):
     """Query Langflow API"""
+    # Debug: Print and display API URL and LANGFLOW_TOKEN
+    print(f"[DEBUG] API_URL: {API_URL}")
+    print(f"[DEBUG] LANGFLOW_TOKEN: {mask_token(LANGFLOW_TOKEN)}")
+    st.sidebar.markdown(f"**[DEBUG] API_URL:** `{API_URL}`")
+    st.sidebar.markdown(f"**[DEBUG] LANGFLOW_TOKEN:** `{mask_token(LANGFLOW_TOKEN)}`")
     
     payload = {
         "input_value": user_input,
