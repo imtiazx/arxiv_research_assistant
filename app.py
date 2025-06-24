@@ -259,12 +259,7 @@ def query_langflow(user_input, openai_api_key):
     payload = {
         "input_value": user_input,
         "output_type": "chat",
-        "input_type": "chat",
-        "tweaks": {
-            "Agent-Ex18F": {
-                "api_key": openai_api_key
-            }
-        }
+        "input_type": "chat"
     }
 
     headers = {
