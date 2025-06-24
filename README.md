@@ -38,7 +38,7 @@ The system remembers your previous searches, so you can ask questions about the 
 - Python 3.9 or higher
 - OpenAI API key
 
-### Installation
+### Install & Run
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/arxiv-research-assistant.git
@@ -53,44 +53,23 @@ The system remembers your previous searches, so you can ask questions about the 
    ```bash
    pip install -r requirements.txt
 
-### Run the App
-  ```bash
+4. Run the App
+   ```bash
    streamlit run streamlit.py```
-
-⚡ Features
-Search arXiv papers by topic and time range
-
-Follow-up question handling (memory of previous search)
-
-Summarization of research papers
-
-Fast and interactive chat interface
-
-💻 Tech Stack
-Streamlit
-
-Langflow
-
-OpenAI GPT-4o-mini
-
-📜 License
-This project is open-source and available under the MIT License.
-
 
 ---
 
-### ✅ Key Notes:
-- All code blocks are properly closed.
-- The virtual environment creation is inside a code block.
-- Section breaks (`---`) are consistently used for clean separation.
-- This is **ready to paste directly into your `README.md` file**.
+## Features
+- Search arXiv papers by topic and time range
+- Follow-up question handling (memory of previous search)
+- Summarization of research papers
+- Fast and interactive chat interface
 
-If you want, I can help you:
-- Add a `.gitignore` file.
-- Create a sample `.env` template.
-- Create badges (Python version, license, OpenAI powered).
+## 💻 Tech Stack
+- Streamlit
+- Langflow
+- OpenAI GPT-4o-mini
 
-Let me know! 😊
-
-
-
+📜 License
+This project is open-source and available under the MIT License.
+---
